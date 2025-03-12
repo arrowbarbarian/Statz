@@ -91,6 +91,12 @@ public class StatzPlaceholders extends PlaceholderExpansion {
         }
 
         // More specific placeholders
+
+        //add timevalue per world
+        StatzUtil.timeToString((int) query.getValue(), Time.MINUTES), query.getValue("world")));
+
+
+            
         else if (params.toLowerCase(Locale.ROOT).startsWith("mobs_killed_")) {
             EntityType type;
             try {
